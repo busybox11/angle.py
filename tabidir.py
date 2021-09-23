@@ -1,5 +1,7 @@
 class TaBiDir:
     def __init__(self, g, d):
+        if (not type(g) == "list" or not type(d) == "list"):
+            raise ValueError
         self.__g = g
         self.__d = d
     
