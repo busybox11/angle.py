@@ -16,9 +16,9 @@ class TaBiDir:
 
     def setitem(self, i, v):
         if i >= 0:
-            self.__d.insert(i, v)
+            self.__d[i] = v
         else:
-            self.__g.insert(i, v)
+            self.__g[i] = v
 
     def imin(self):
         return -len(self.__g)
